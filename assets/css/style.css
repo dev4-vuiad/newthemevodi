@@ -1,0 +1,220 @@
+.menu-item-has-children .sub-menu {
+    transition: 500ms;
+}
+.menu-image-title-after {
+    padding-left: 10px;
+}
+
+.offcanvas-drawer {
+    transition: none !important;
+}
+.movie__description span {
+    color: #FFF !important;
+}
+
+.movie__description pre {
+  white-space: normal;
+  background-color: none;
+}
+
+.layout-enter-active, .layout-leave-active {
+    transition: opacity .3s;
+  }
+  .layout-enter-from, .layout-leave-to {
+    opacity: 0;
+  }
+
+  .page-enter-active, .page-leave-active {
+    transition: opacity .3s;
+  }
+  .page-enter-from, .page-leave-to {
+    opacity: 0;
+  }
+
+body {
+    background-color: rgb(19, 23, 34);
+    overflow-y: scroll;
+}
+
+.lazyload {
+    display: block;
+    min-height: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.lazyloaded {
+    opacity: 1;
+}
+
+#section-home-slider-custom-64d31949b2fcb .lazyloaded, .post-type-archive-movie .movie__poster .lazyloaded {
+  min-height: 100%;
+}
+
+.dashicons {
+  font-size: 20px;
+}
+
+.dashicons::before {
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 20px;
+}
+
+.dashicons-laptop:before {
+  font-family: dashicons;
+  content: "\f547";
+}
+
+.dashicons-admin-site-alt3:before {
+  font-family: dashicons;
+  content: "\f11f"
+}
+
+.dropdown-menu {
+  right: 0 !important;
+}
+
+.search.movie__title:hover{
+  color: #0f9ed1
+}
+
+.loading-bg {
+  background-color: #202124;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.episodes__inner {
+  width: 100%;
+  margin-right: 0
+}
+
+.episode__description pre {
+  white-space: normal;
+  background-color: none;
+}
+
+.episode__description.modified > div {
+  height: auto;
+  transition: max-height 600ms ease-in-out;
+  overflow: hidden;
+  max-height: 50px;
+}
+
+.tv-show__short-description.modified>div {
+  height: auto;
+  transition: max-height 600ms ease-in-out;
+  overflow: hidden;
+  max-height: 47px;
+
+}
+
+.tv-show__short-description.modified>div.expanded {
+  max-height: 200px;
+}
+
+.embla__slide__inner1 img{
+  height: 100%;
+}
+
+.movie__description>div {
+  height: auto;
+  transition: max-height 600ms ease-in-out;
+  overflow: hidden;
+  max-height: 50px;
+  color: #949cb0;
+}
+
+.single-movie-v2 .single-movie__player-container--inner .single-movie__sidebar--head-info .movie__body.desktop {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.page-episode .episode.active a> * {
+  color: #FFF !important;
+}
+
+.casts-list {
+  line-height: 16px;
+  margin-top: 13px;
+}
+
+.casts-list .tv-show__meta--genre span {
+  color: rgb(36, 186, 239);
+}
+
+.episode__meta--release-date {
+  display: block;
+  line-height: .9;
+}
+
+.person-thumbnail {
+  width: 100%;
+  background: none;
+}
+
+.person-thumbnail.empty {
+  aspect-ratio: 3 / 4;
+  display: flex;
+}
+
+.person-thumbnail.empty {
+  opacity: .2;
+}
+
+.person-thumbnail img {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#content[name=person] .vodi-control-bar, 
+#content[name=person] .tv-shows-ordering,
+#content[name="person-list"] .vodi-control-bar, 
+#content[name="person-list"] .tv-shows-ordering {
+  justify-content: flex-end;
+}
+
+#content[name="person-list"] .page-header {
+  border-bottom: 1px solid #2a2e3c;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content[name="person-list"] .page-header h1 {
+  border-bottom: 0
+}
+
+#content[name="person-list"] .page-header .search {
+  margin-top: 15px;
+}
+
+
+#content.page-episode .episode.active * {
+  color: #FFF;
+}
+
+.movie__poster.cast::before {
+  content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/cast_no_thumnbnail.svg);
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    background-position-y: center;
+    opacity: .2;
+}
+
+.kokoads {
+  min-height: 1px;
+  width: 100%;
+}
+
+.home-movie-section-aside-header__inner .has-post-thumbnail .lazyloaded {
+  min-height: 100%;
+}
