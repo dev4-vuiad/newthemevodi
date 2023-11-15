@@ -1,6 +1,6 @@
 $(document).ready(function() {
     let expanded = false
-    $('.maxlist-more').on('click', function(event) {
+    $('.movie__description .maxlist-more, .episode__description .maxlist-more').on('click', function(event) {
         event.preventDefault()
         expanded = !expanded
         let ele = $(event.target), h
