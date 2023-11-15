@@ -34,5 +34,16 @@ $(document).ready(function() {
     $(document).on("click", function(e) {
         $(".site-content").hasClass("active-hh-sidebar") && ($(".handheld-sidebar-toggle").is(e.target) || 0 !== $(".handheld-sidebar-toggle").has(e.target).length || $("#secondary").is(e.target) || 0 !== $("#secondary").has(e.target).length || $(".site-content").toggleClass("active-hh-sidebar"))
     })
+
+    // Toggle Search icon mobile
+    $('.dropdown-toggle').on('click', function(event) {
+        event.preventDefault()
+        $('.dropdown-menu').toggleClass('show')
+    })
+
+    // Toggle sub menu
+    $('.dropdown-toggle.nav-link').on('click', function(event) {
+        $(event.target).parent().toggleClass('show')
+    })
 })
 
