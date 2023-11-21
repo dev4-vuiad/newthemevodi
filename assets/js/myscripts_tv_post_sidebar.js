@@ -12,11 +12,15 @@ $(document).ready(function() {
         $(this).parent().siblings().find('a').removeClass('active show')
         $('.custom-sidebar-ep').find('.tab-pane:eq(' + customSidebarEp.currentIdx + ')').addClass('active show')
         $('.custom-sidebar-ep').find('.tab-pane:eq(' + customSidebarEp.currentIdx + ')').siblings().removeClass('active show')
+        let n = $('.custom-sidebar-ep').find('.tab-pane:eq(' + customSidebarEp.currentIdx + ') .status-publish').length
+        $('.list-episode-show-more').toggle(customSidebarEp.showIdxs[customSidebarEp.currentIdx] < n - 1)
     })
 
     $('.list-episode-show-more').on('click', function(event) {
         event.preventDefault()
         customSidebarEp.showIdxs[customSidebarEp.currentIdx] += 10
         $('.custom-sidebar-ep').find('.tab-pane:eq(' + customSidebarEp.currentIdx + ') .status-publish:lt(' + customSidebarEp.showIdxs[customSidebarEp.currentIdx] + ')').show()
+        let n = $('.custom-sidebar-ep').find('.tab-pane:eq(' + customSidebarEp.currentIdx + ') .status-publish').length
+        $('.list-episode-show-more').toggle(customSidebarEp.showIdxs[customSidebarEp.currentIdx] < n - 1)
     })
 })
