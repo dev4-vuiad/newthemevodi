@@ -218,3 +218,10 @@ body {
 .home-movie-section-aside-header__inner .has-post-thumbnail .lazyloaded {
   min-height: 100%;
 }
+
+.ads-responsive-height:has(.kskdDiv.kskdCls[data-kiosked-state="destroyed"]), .ads-responsive-height:has(.kskdDiv.kskdCls[data-kiosked-state="destroyed"]) > .ads-box-child {
+  height: 0 !important;
+  min-height: 1px !important;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
