@@ -219,9 +219,14 @@ body {
   min-height: 100%;
 }
 
-.ads-responsive-height:has(.kskdDiv.kskdCls[data-kiosked-state="destroyed"]), .ads-responsive-height:has(.kskdDiv.kskdCls[data-kiosked-state="destroyed"]) > .ads-box-child {
-  height: 0 !important;
+.ads-responsive-height:has(>.kskdDiv.kskdCls[data-kiosked-state="destroyed"]) > .ads-box-child {
+  height: 1px !important;
   min-height: 1px !important;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  margin-top: 0;
+}
+
+.single-tv_show .entry-summary:has(.kskdDiv.kskdCls[data-kiosked-state="destroyed"]) .ads-responsive-height:has(>.kskdDiv.kskdCls[data-kiosked-state="destroyed"]) {
+  height: 1px !important;
+  min-height: 1px !important;
+  margin-top: 0;
 }
