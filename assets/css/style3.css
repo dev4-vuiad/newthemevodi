@@ -14904,6 +14904,16 @@ p.stars.selected a:not(.active):before {
   padding: 0;
 }
 
+.height-responsive {
+  min-height: calc(100vh - 234px);
+}
+
+@media (max-width: 576px) {
+  .height-responsive {
+    min-height: calc(100svh - 113px);
+  }
+}
+
 .dark .movie__title {
   color: #fff;
 }
