@@ -39,6 +39,7 @@ $(document).ready(function() {
     $('.dropdown-toggle').on('click', function(event) {
         event.preventDefault()
         $('.dropdown-menu').toggleClass('show')
+        $('.dropdown-menu').find('input').focus()
     })
 
     // Toggle sub menu
